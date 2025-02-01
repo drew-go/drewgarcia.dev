@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Drew Garcia</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Drew Garcia</description>
+    <title>Blogs on Drew Garcia</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blogs on Drew Garcia</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 Jan 2025 22:32:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo &#43; DecapCMS = ✅</title>
       <link>http://localhost:1313/blog/2025-02-01-hugo-decapcms-/</link>
