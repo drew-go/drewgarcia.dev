@@ -1,0 +1,8 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+{{ $css := resources.Get "css/main.css" | postCSS }} {{ if hugo.IsProduction }}
+{{ $css = $css | minify | fingerprint }} {{ end }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+<title>{{ .Site.Title }}</title>
