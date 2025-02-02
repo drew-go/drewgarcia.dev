@@ -32,4 +32,10 @@ public/
 
 # Generated CSS
 assets/css/index.css
-/public
+public/*/
+public/*/*/
+public/*/*/*/
+public/*/*/*/*/
+public/*/*/*/*/*/
+public/*/*/*/*/*/*/
+public/*/*/*/*/*/*/*/
