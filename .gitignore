@@ -22,9 +22,14 @@ hugo_stats.json  # Generated class detection file
 hugo.log
 hugo.draft
 
-### CSS Build Output ###
-/static/css/styles.css  # Generated Tailwind output
-
 ### Environment files ###
 .env
 .env.local
+
+# Hugo generated files
+public/
+/resources/_gen/
+
+# Generated CSS
+assets/css/index.css
+/public
