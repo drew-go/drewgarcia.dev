@@ -1,0 +1,24 @@
+{{ define "main" }}
+<article class="prose lg:prose-xl flex flex-col gap-8">
+  <h1 class="text-2xl font-bold">Drew Garcia Blog</h1>
+  <ul>
+    {{ range (where .Site.RegularPages "Section" "blog").ByDate.Reverse }}
+    <li class="border-b border-primary-content pb-4">
+      <a href="{{ .RelPermalink }}">
+        <div class="flex items-end gap-2">
+          <h2 class="text-lg font-bold">
+            {{ .Title }}
+          </h2>
+          <time datetime="{{ .Date.Format "2006-01-02" }}" class="text-sm text-neutral-content">
+            {{ .Date.Format "January 2, 2006" }}
+          </time>
+        </div>
+        {{ with .Description }}
+        <p class="text-base">{{ . }}</p>
+        {{ end }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</article>
+{{ end }}
