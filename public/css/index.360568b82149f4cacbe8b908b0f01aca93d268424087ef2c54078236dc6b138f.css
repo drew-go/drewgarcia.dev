@@ -1905,9 +1905,6 @@
     grid-row-start: 1;
     min-width: calc(0.25rem * 0);
   }
-  .list-col-wrap {
-    grid-row-start: 2;
-  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
