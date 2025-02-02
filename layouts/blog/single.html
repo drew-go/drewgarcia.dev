@@ -1,16 +1,11 @@
 {{ define "main" }}
-<article>
+<article class="prose lg:prose-lg">
   <header>
     <h1>{{ .Title }}</h1>
-    <div>
-      <time datetime="{{ .Date.Format "2006-01-02" }}">
-        {{ .Date.Format "January 2, 2006" }}
-      </time>
-      {{ with .Params.author }} * <span>{{ . }}</span>{{ end }}
-    </div>
+    <time datetime="{{ .Date.Format "2006-01-02" }}">
+      {{ .Date.Format "January 2, 2006" }}
+    </time>
   </header>
-  <div>
-    {{ .Content }}
-  </div>
+  {{ .Content }}
 </article>
 {{ end }}
