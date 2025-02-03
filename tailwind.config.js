@@ -4,9 +4,14 @@ module.exports = {
   content: [
    "./public/**/*.html"
   ],
-  theme: {
-    extend: {},
+  daisyui: {
+    themes: false,
+    darkTheme: "dark",
+    base: true,
+    utils: true,
+    styled: true,
+    prefix: "dui",
+    logs: true,
+    themeRoot: ":root",
   },
-  plugins: [
-  ],
 }

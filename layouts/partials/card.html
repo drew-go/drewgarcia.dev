@@ -1,15 +1,20 @@
-<div
-  class="card card-md lg:w-8/10 card-bordered bg-base-200 hover:bg-base-300 transition-all mx-auto"
+<a
+  aria-label="Read more about {{ .Title | plainify }}"
+  href="{{ .RelPermalink }}"
+  class="block"
 >
-  <div class="card-body">
-    <h2 class="card-title">{{ .Title }}</h2>
-    <p>{{ .Description | default .Summary }}</p>
-    <div class="card-actions justify-end">
-      <a
-        href="{{ .RelPermalink }}"
-        class="link link-hover link-accent transition-all"
-        >Read More</a
-      >
+  <div
+    class="card card-md lg:w-8/10 card-border group bg-base-200 transition-all mx-auto"
+  >
+    <div class="card-body transition-all">
+      <h2 class="card-title group-hover:opacity-80 transition-all">{{ .Title }}</h2>
+      <p class="group-hover:opacity-80 transition-all">{{ .Description | default .Summary }}</p>
+      <div class="card-actions justify-between items-end">
+        <time class="group-hover:opacity-80 transition-all" datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "January 2, 2006" }}
+        </time>
+        <kbd class="!font-mono font-bold kbd kbd-2xl hover:drop-shadow-[0_2px_2px_rgba(0,211,187,0.5)] transition-all">&rarr;</kbd>
+      </div>
     </div>
   </div>
-</div>
+</a>
