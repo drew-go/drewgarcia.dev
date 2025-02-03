@@ -14,4 +14,5 @@ module.exports = {
     logs: true,
     themeRoot: ":root",
   },
+  plugins: [require("daisyui")],
 }
