@@ -1,5 +1,5 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  include: link, footer, card, colors, themes;
+  include: link, footer, card, typography;
 }
 @plugin "@tailwindcss/typography";
