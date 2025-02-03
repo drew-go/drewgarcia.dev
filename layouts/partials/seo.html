@@ -1,0 +1,23 @@
+{{ $title := .Title }} {{ if .Params.seo.title }} {{ $title = .Params.seo_title
+}} {{ end }}
+<!-- SEO Tags -->
+<title>{{ $title }} | {{ .Site.Title }}</title>
+<meta
+  name="description"
+  content="{{ .Params.seo.description }} | {{ .Description }}"
+/>
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ $title }}" />
+<meta
+  property="og:description"
+  content="{{ .Params.seo.description }} | {{ .Description }}"
+/>
+<meta property="og:url" content="{{ .Permalink }}" />
+
+<!-- Twitter -->
+<meta name="twitter:title" content="{{ $title }}" />
+<meta
+  name="twitter:description"
+  content="{{ .Params.seo.description }} | {{ .Description }}"
+/>
