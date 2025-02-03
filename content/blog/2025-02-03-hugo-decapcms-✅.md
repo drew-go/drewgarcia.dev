@@ -1,7 +1,8 @@
 ---
+slug: benefits-of-hugo-with-decapcms
 title: Hugo + DecapCMS = ✅
-date: 2025-02-02T23:15:00.000Z
 description: The Benefits of Using Hugo with DecapCMS
+date: 2025-02-02T23:15:00.000Z
 ---
 ## Why Hugo + DecapCMS is a Great Choice for Your Website
 
