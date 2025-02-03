@@ -1,6 +1,6 @@
 {{ define "main" }}
 <ul class="list-none flex flex-col max-w-[65ch] divide-y-2 divide-primary-content">
-    {{ range (where .Site.RegularPages "Section" "blog").ByDate.Reverse }}
+    {{ range .Pages.ByDate.Reverse }}
         <li class="pb-4">
         <a href="{{ .RelPermalink }}" class="decoration-none opacity-80 hover:opacity-100 transition-all">
             <div class="flex items-end gap-2">
@@ -11,9 +11,7 @@
                 {{ .Date.Format "January 2, 2006" }}
             </time>
             </div>
-            {{ with .Description }}
-            <p class="text-base mt-2">{{ . }}</p>
-            {{ end }}
+            <p class="text-base mt-2">{{ .Description | default .Summary }}</p>
         </a>
         </li>
     {{ end }}

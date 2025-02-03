@@ -3,7 +3,7 @@
 >
   <div class="card-body">
     <h2 class="card-title">{{ .Title }}</h2>
-    <p>{{ .Description }}</p>
+    <p>{{ .Description | default .Summary }}</p>
     <div class="card-actions justify-end">
       <a
         href="{{ .RelPermalink }}"
