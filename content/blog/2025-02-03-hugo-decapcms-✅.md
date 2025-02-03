@@ -2,7 +2,7 @@
 slug: benefits-of-hugo-with-decapcms
 title: Hugo + DecapCMS = ✅
 description: The Benefits of Using Hugo with DecapCMS
-date: 2025-02-02T23:56:00.000Z
+date: 2025-02-03T00:23:00.000Z
 seo:
   title: Why Hugo and DecapCMS are a Great Choice for Your Website
   description: If you're looking for a  fast, secure, and easy-to-manage static
