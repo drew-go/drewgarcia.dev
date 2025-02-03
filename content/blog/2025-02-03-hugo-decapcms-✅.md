@@ -1,9 +1,17 @@
 ---
+slug: benefits-of-hugo-with-decapcms
 title: Hugo + DecapCMS = ✅
-date: 2025-02-02T23:15:00.000Z
 description: The Benefits of Using Hugo with DecapCMS
+date: 2025-02-02T23:15:00.000Z
+seo:
+  title: Why Hugo and DecapCMS are a Great Choice for Your Website
+  description: If you're looking for a  fast, secure, and easy-to-manage static
+    site, pairing Hugo with DecapCMS (formerly Netlify CMS) is an excellent
+    choice. This combination provides a streamlined content management
+    experience while maintaining the performance and security benefits of a
+    static site.
 ---
-## Why Hugo + DecapCMS is a Great Choice for Your Website
+## Why Hugo + DecapCMS are a Great Choice for Your Website
 
 If you're looking for a **fast, secure, and easy-to-manage** static site, pairing **Hugo** with **DecapCMS** (formerly Netlify CMS) is an excellent choice. This combination provides a streamlined content management experience while maintaining the performance and security benefits of a static site.
 
