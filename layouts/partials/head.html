@@ -1,6 +1,45 @@
+<!-- SEO Meta Tags -->
+<title>{{ .Params.seo.title | default .Title }}</title>
+
+<meta
+  name="description"
+  content="{{ .Params.seo.description | default .Summary }}"
+/>
+
+{{ if .Params.seo.noindex }}
+<meta name="robots" content="noindex,nofollow" />
+{{ end }} {{ with .Params.seo.canonical }}
+<link rel="canonical" href="{{ . }}" />
+{{ end }}
+
+<!-- Open Graph/Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta
+  property="og:description"
+  content="{{ .Description | default (.Summary | plainify | truncate 160) }}"
+/>
+{{ if .Params.featured_image }}<meta
+  property="og:image"
+  content="{{ .Params.featured_image | absURL }}"
+/>{{ end }}
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta
+  name="twitter:description"
+  content="{{ .Description | default (.Summary | plainify | truncate 160) }}"
+/>
+{{ if .Params.featured_image }}<meta
+  name="twitter:image"
+  content="{{ .Params.featured_image | absURL }}"
+/>{{ end }}
+
+<!-- Meta Tags -->
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 {{ partialCached "css.html" . }}
-<title>{{ .Site.Title }}</title>
