@@ -3,7 +3,7 @@
     "dev-hugo": "hugo server --gc",
     "dev-tailwind": "npx @tailwindcss/cli -i assets/css/main.css -o public/css/index.css --watch",
     "dev": "run-p dev-hugo dev-tailwind",
-    "build": "npx @tailwindcss/cli -i assets/css/main.css -o public/css/index.css --minify"
+    "build": "npx @tailwindcss/cli -i assets/css/main.css -o public/css/index.css --minify && hugo --minify"
   },
   "dependencies": {
     "npm-run-all": "^4.1.5",
