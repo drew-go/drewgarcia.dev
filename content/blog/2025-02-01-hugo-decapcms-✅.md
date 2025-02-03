@@ -1,8 +1,8 @@
 ---
 title: Hugo + DecapCMS = ✅
-date: 2025-01-31T22:32:00.000Z
+date: 2025-02-02T23:13:00.000Z
 description: The Benefits of Using Hugo with DecapCMS
-seo_title: 'Integrating Hugo with DecapCMS: Static Site CMS Guide (2025)'
+seo_title: "Integrating Hugo with DecapCMS: Static Site CMS Guide (2025)"
 ---
 ## Why Hugo + DecapCMS is a Great Choice for Your Website
 
