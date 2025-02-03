@@ -4,7 +4,7 @@
   class="block"
 >
   <div
-    class="card card-md xl:card-xl lg:w-8/10 card-border group bg-base-200 transition-all mx-auto"
+    class="card card-md xl:card-lg lg:w-8/10 card-border group bg-base-300 hover:bg-base-200 !border-base-300 transition-all mx-auto"
   >
     <div class="card-body transition-all">
       <h2 class="card-title group-hover:opacity-80 transition-all">{{ .Title }}</h2>
@@ -13,7 +13,7 @@
         <time class="!font-mono text-xs xl:text-sm group-hover:opacity-80 transition-all" datetime="{{ .Date.Format "2006-01-02" }}">
           {{ .Date.Format "January 2, 2006" }}
         </time>
-        <button class="mt-4 md:mt-0 btn-block md:w-auto !leading-none !font-mono !text-4xl xl:!text-6xl btn btn-accent btn-soft xl:btn-lg xl:pb-1">
+        <button class="transition-all group-hover:bg-accent-content hover:border-accent-content group-hover:text-accent hover:scale-110 hover:text-accent mt-4 md:mt-0 btn-block md:w-auto !leading-none !font-mono !text-4xl xl:!text-6xl btn btn-accent btn-soft xl:btn-lg xl:pb-1">
           &rarr;
         </button>
       </div>

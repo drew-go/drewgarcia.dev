@@ -2,7 +2,7 @@
 <ul class="list-none flex flex-col max-w-[65ch] divide-y-2 divide-primary-content">
     {{ range .Pages.ByDate.Reverse }}
         <li class="pb-4">
-        <a href="{{ .RelPermalink }}" class="decoration-none opacity-80 hover:opacity-100 transition-all">
+        <a href="{{ .RelPermalink }}" class="decoration-none hover:opacity-80 transition-all">
             <div class="flex items-end gap-2">
             <p class="text-lg font-bold">
                 {{ .Title }}

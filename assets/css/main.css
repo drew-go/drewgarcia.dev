@@ -2,6 +2,9 @@
 @import "tailwindcss";
 @plugin "daisyui" {
   include: link, footer, card, typography, size, button, kbd, prose;
+  themes:
+    corporate --default,
+    black --prefersdark;
 }
 @plugin "@tailwindcss/typography";
 
