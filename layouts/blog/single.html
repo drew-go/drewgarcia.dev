@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article class="prose lg:prose-lg">
+<article class="prose lg:prose-lg mx-auto">
   <header>
     <h1>{{ .Title }}</h1>
     <time datetime="{{ .Date.Format "2006-01-02" }}">
@@ -7,6 +7,5 @@
     </time>
   </header>
   {{ .Content }}
-  <a href="/blog" class="link link-accent">← Back to Blog Posts</a>
 </article>
 {{ end }}
